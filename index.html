@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <link rel="stylesheet" href="./index.css"></link>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script type="text/javascript" src='./index.js'></script>
+    <script type="text/javascript" src='./common.js'></script>
+  </head>
+
+  <body>
+    <!-- <h2>Choose an option</h2> -->
+    <div class="ui attached segment">
+      <div class="ui visible inverted top menu">
+        <a class="item" href='./index.html'>
+          <i class="calendar check outline icon"></i>
+          To Do
+        </a>
+        <a class="item" href='./wall-page.html'>
+          <i class="block layout icon"></i>
+          Wall
+        </a>
+        <a class="item" href='./note-page.html'>
+          <i class="sticky note outline icon"></i>
+          Note
+        </a>
+      </div>
+
+      <div class="ui placeholder segment" id='contents'>
+        <div class="content-note">
+          note content
+        </div>
+      </div> 
+
+      <div class="ui right labeled left icon input">
+        <i class="tags icon"></i>
+        <input type="text" placeholder="Enter tags">
+        <a class="ui tag label">
+          Add Tag
+        </a>
+      </div>
+
+    </div>
+  </body>
+
+</html>
