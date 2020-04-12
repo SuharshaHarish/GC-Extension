@@ -4,11 +4,50 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type='text/javascript' src='./common.js'></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="./wall-page.css">
   </head>
   
   <body> 
-    wall
+    <div>
+      <div class="wall option">
+        <span>
+        Use default wall
+        </span>
+        <div class="ui fitted big toggle checkbox">
+          <input type="checkbox">
+          <label></label>
+        </div>
+      </div>
+      <div class="background-color">
+        <!-- <table id='color-table'>
+          <tr>
+            <td>Black</td>
+            <td>Blue</td>
+            <td>Yellow</td>
+          </tr>
+          <tr>
+            <td>Orange</td>
+            <td>Green</td>
+            <td>Purple</td>
+          </tr>
+          <tr>
+            <td>Brown</td>
+            <td>Pink</td>
+            <td>Gray</td>
+          </tr>
+        </table> -->
+        <div class="image">
+          <div class="ui placeholder">
+            <div class="square image"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-
+  <script type='text/javascript' src='./wall.js'></script>
+  <script type='text/javascript' src='./common.js'></script>
 </html>

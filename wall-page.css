@@ -1,0 +1,10 @@
+.wall.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+
+td  {
+  border: 1px  solid black;
+}
