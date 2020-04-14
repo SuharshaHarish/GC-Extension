@@ -1,7 +1,13 @@
 ## ---For developpers---
 
 ### Setup
-Follow google docs https://developer.chrome.com/apps/first_app from 5th step
+Navigate to **chrome://extensions/** in the chrome browser and  make sure the 
+**Developer mode** is selected(on the top of the page).
+Click on **Load unpacked** option and select the project.
+
+or
+
+Follow google docs https://developer.chrome.com/apps/
 
 #### Coding style 
 * Use sematic ui for styling, layout, icons, pagination e.t.c
