@@ -1,11 +1,6 @@
-const changeDisplayBackgroundColor = (key, color) => {
-  console.log(key, color);
-  if (color) {
-    obj = { [key]: color };
-    chrome.storage.sync.set(obj);
-    // only stores background/text color in chrome.sync
-    // back ground/text will be set in chromeBackground.js file
-  } else return;
+const storeInChrome = (key, value) => {
+  obj = { [key]: value };
+  chrome.storage.sync.set(obj);
 };
 
 const createColorTable = (colors, cellStyle, key) => {
@@ -19,7 +14,9 @@ const createColorTable = (colors, cellStyle, key) => {
       cell.appendChild(cellText);
       cell.addEventListener(
         "click",
-        changeDisplayBackgroundColor.bind(null, key, colors[i + j])
+        storeInChrome.bind(null, key, colors[i + j])
+        // only stores background/text color in chrome.sync
+        // back ground/text will be set in chromeBackground.js file
       );
       cell.style[cellStyle] = `${colors[i + j].toLowerCase()}`;
       row.appendChild(cell);
@@ -49,3 +46,13 @@ const createColorTable = (colors, cellStyle, key) => {
   table = createColorTable(colors, "color", "textColor");
   background.appendChild(table);
 })();
+
+const inspirationFormHandler = () => {
+  const submitButton = document.querySelector("#submit-button");
+  submitButton.addEventListener("click", () => {
+    const inputText = document.querySelector("#input-text");
+    storeInChrome("userInspiration", inputText.value);
+    inputText.value = "";
+  });
+};
+inspirationFormHandler();
