@@ -1,11 +1,35 @@
-body {
-  text-align: center;
-}
+/* body {
+  height: 100vh;
+} */
 
-#inspirationa-quote {
-font-size: large;
+body{
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+#quote, #author {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#quote {
+  font-size: 35px;
+  color: white
 }
 
 #author {
-font-size: smaller;
+  font-size: 20px;
+  color: white
+}
+
+#inspirational-quote{
+  width: 900px;
 }
